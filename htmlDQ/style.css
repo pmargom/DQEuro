@@ -67,7 +67,8 @@ header#header #logo {
   line-height: 100px;
   text-indent: -9999px;
   float: left;
-  background-image: url(images/logo.svg);
+  /*background-image: url(images/logo.svg);*/
+  background-image: url(images/logo-no-back.png);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
