@@ -45,11 +45,8 @@ angular.module("dqeuro").config(function($routeProvider) {
       controller: "AvisoLegalCtrl",
       templateUrl: "views/AvisoLegal.html"
    });
-
-
-
    
-   // default route.
+   // facebook route.
    $routeProvider.otherwise({
       redirectTo: "/inicio"
    });
