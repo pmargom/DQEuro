@@ -36,6 +36,11 @@ angular.module("dqeuro").config(function($routeProvider) {
       templateUrl: "views/Products.html"
    });
 
+   $routeProvider.when("/contacto", {
+      controller: "ContactoCtrl",
+      templateUrl: "views/Contact.html"
+   });
+
    
    // default route.
    $routeProvider.otherwise({
