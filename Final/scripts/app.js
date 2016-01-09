@@ -41,6 +41,13 @@ angular.module("dqeuro").config(function($routeProvider) {
       templateUrl: "views/Contact.html"
    });
 
+   $routeProvider.when("/aviso-legal", {
+      controller: "AvisoLegalCtrl",
+      templateUrl: "views/AvisoLegal.html"
+   });
+
+
+
    
    // default route.
    $routeProvider.otherwise({
