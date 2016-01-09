@@ -5,269 +5,141 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
+    <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8" />
-	<title>DQEuro, S.L. - Desarrollo Químico Europeo</title>
+    <meta charset="utf-8" />
+    <title>DQEuro, S.L. - Desarrollo Químico Europeo</title>
     <meta name="robots" content="index, follow" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-	<meta name="author" content="" />
+    <meta name="author" content="" />
 
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<!-- CSS
+
+    <!-- CSS
   ================================================== -->
-  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/inner.css" />
     <link rel="stylesheet" href="styles/nivo-slider.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <link rel="stylesheet" href="styles/color.css" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <!-- Loading angular-loading-bar styles -->
+    <link rel="stylesheet" href="styles/loading-bar.min.css" />
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
 
-    
-    
 </head>
 
-
-<body class="home">
+<body class="home" ng-app="dqeuro">
 
 <div id="bodychild">
-	<div id="outercontainer">
-    	<div class="container">
-        <div class="row">
-    	<div id="logo" class="two columns">
-        	<div id="logo-wrap">      	
-                <div id="logoimg">
-                    <a href="index.html" title="RoyalStartex" >
-                        <img src="images/logo.png" alt="" />
-                    </a>
-                </div>
-                <div id="logo-msg">Desarrollo Químico Europeo</div>
-		        <div class="clear"></div>
-            </div>
-        </div>
-    	<div class="ten columns">
-        <!-- HEADER -->
-        <div id="outerheader">
-        	<div id="headercontainer">
-                <div class="container">
-                    <header id="top">
-                        <div class="row">
-                        	<div class="top-container1 six columns">
-                                 <!--..this can be your tagline or something you want..-->
-                                <div class="direccion">
-                                    Pol. Ind. Las Eras Altas, manz. C, parcelas 11-13, 38592 Las Eras (Arico). <br> Tenerife, Islas Canarias, España
-                                </div>
-                                <div class="direccion">
-                                    <strong>Tel/Fax:</strong> +34 922 000 000 / +34 922 000 000 <br> <strong>Email:</strong> <a href="#">administracion@dqeuro.com</a>
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                            <div class="top-container2 six columns">
-                                <ul class="sn">
-                                    <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>
-                                    <li><a href="http://facebook.com" title="Facebook"><span class="icon-img facebook"></span></a></li>
-                                    <!--<li><a href="https://plus.google.com" title="Google+"><span class="icon-img google"></span></a></li>-->
-                                    <!--<li><a href="http://pinterest.com" title="Pinterest"><span class="icon-img pinterest"></span></a></li>-->
-                                </ul> 
-                            </div>
-                            <div class="clear"></div>
-                            <section id="navigation" class="twelve columns">
-                                <nav id="nav-wrap">
-                                    <ul id="topnav" class="sf-menu">
-                                        <li class="current"><a href="index.html">Inicio</a></li>
-                                        <li><a href="blog.html">Nosotros</a></li>
-                                        <li><a href="about.html">Servicios</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Only</a></li>
-                                                <li><a href="#">Example of</a></li>
-                                                <li><a href="#">Dropdown</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="portfolio.html">Productos</a></li>
-                                        <li><a href="contact.html">Contacto</a></li>
-                                    </ul>                                
-								</nav><!-- nav -->	
-                                <div class="clear"></div>
-                            </section>
-                            <div class="clear"></div>
-                            
+    <div id="outercontainer">
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="two columns">
+                    <div id="logo-wrap">
+                        <div id="logoimg">
+                            <a href="index_temp.html" title="RoyalStartex" >
+                                <img src="images/logo.png" alt="" />
+                            </a>
                         </div>
+                        <div id="logo-msg">Desarrollo Químico Europeo</div>
                         <div class="clear"></div>
-                    </header>
+                    </div>
                 </div>
-                <div class="clear"></div>
-            </div>
-		</div>
-        <!-- END HEADER -->
-
-
-        <!-- SLIDER -->
-        <div id="outerslider">
-            <div class="container">
-                <div id="slidercontainer">
-                  <section id="slider">       
-                        <div id="slidernivo" class="nivoSlider">
-                            <!--<img src="http://placehold.it/970x462"  alt="slide3" title="#22" />-->
-                            <!--<img src="http://placehold.it/970x462"  alt="slide2" title="#16" />-->
-                            <!--<img src="http://placehold.it/970x462"  alt="slide1" title="#14" />                            -->
-                            <img src="images/contents/slide1.jpg"  alt="slide3" title="#22" />
-                            <img src="images/contents/slide2.jpg"  alt="slide2" title="#16" />
-                            <img src="images/contents/slide3.jpg"  alt="slide1" title="#14" />
-                        </div>
-                        <div id="22" class="nivo-html-caption">
-                            <div class="slider-title">Comprometidos con la calidad</div>
-                            <p class="slider-desc">Más de 500 clientes satisfechos.</p>
-                        </div>
-                        <div id="16" class="nivo-html-caption">
-                            <div class="slider-title">Amplia gama de productos</div>
-                            <p class="slider-desc">Más de 25 productos a su disposición.</p>
-                        </div>
-                        <div id="14" class="nivo-html-caption">
-                            <div class="slider-title">Solvencia técnica</div>
-                            <p class="slider-desc">Más de 20 años de experiencia nos avalan.</p>
-                        </div>                        
-                  </section>
-                </div>
-            </div>
-        </div>
-        <!-- END SLIDER -->        
-
-
-        <!-- MAIN CONTENT -->
-        <div id="outermain">
-        	<div id="maincontainer">
-                <div class="container">
-                
-                    <div class="row">
-                        <section id="maincontent" class="twelve columns">
-							<section class="content">
-                                <div class="ts-features ">
+                <div class="ten columns">
+                    <!-- HEADER -->
+                    <div id="outerheader">
+                        <div id="headercontainer">
+                            <div class="container">
+                                <header id="top">
                                     <div class="row">
-                                        <div class="one_half columns fitem feature1 alpha">
-                                            <div class="item-container">
-                                                <div class="feature-title-container">
-                                                    <div class="img-container"><img  src="images/contents/icon2.png" class="alignleft" alt="" />
+                                        <div class="top-container1 six columns">
+                                            <div class="direccion">
+                                                Pol. Ind. Las Eras Altas, manz. C, parcelas 11-13.
+                                                <br> 38592 Las Eras (Arico),
+                                                <br> Tenerife, Islas Canarias, España
+                                            </div>
+                                            <div class="direccion">
+                                                <strong>Tel/Fax:</strong> +34 922 000 000 / +34 922 000 000 <br> <strong>Email:</strong> <a href="#">administracion@dqeuro.com</a>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="top-container2 six columns">
+                                            <ul class="sn">
+                                                <li><a href="http://twitter.com" title="Twitter"><span class="icon-img twitter"></span></a></li>
+                                                <li><a href="http://facebook.com" title="Facebook"><span class="icon-img facebook"></span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <section id="navigation" class="twelve columns">
+                                            <nav id="nav-wrap">
+                                                <ul id="topnav" class="sf-menu">
+                                                    <li class="current"><a href="#/inicio">Inicio</a></li>
+                                                    <li><a href="#/nosotros">Nosotros</a></li>
+                                                    <li><a href="#/servicios">Servicios</a>
+                                                        <ul class="sub-menu">
+                                                            <li><a href="#">Only</a></li>
+                                                            <li><a href="#">Example of</a></li>
+                                                            <li><a href="#">Dropdown</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#/productos">Productos</a></li>
+                                                    <li><a href="#/contacto">Contacto</a></li>
+                                                </ul>
+                                            </nav><!-- nav -->
+                                            <div class="clear"></div>
+                                        </section>
+                                        <div class="clear"></div>
 
-                                                    </div>
-                                                    <h3 class="feature-title"><a href="#" title="">Mantenimiento</a></h3>
-                                                </div>
-                                                <div class="feature-text">Actividades de mantenimiento de instalaciones a demanda de las necesidades especificas de las mismas. </div>
-                                                <div class="feature-link"><a href="#" class="more-link">Más info</a></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                        <div class="one_half columns fitem feature2 omega">
-                                            <div class="item-container">
-                                                <div class="feature-title-container">
-                                                    <div class="img-container"><img  src="images/contents/icon1.png" class="alignleft" alt="" /></div>
-                                                    <h3 class="feature-title"><a href="#" title="">Legionella</a></h3>
-                                                </div>
-                                                <div class="feature-text">Empresa acreditada por el Servicio Canario de Salud con el número 0482-CAC-LEG. </div>
-                                                <div class="feature-link"><a href="#" class="more-link">Más info</a></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                        <div class="one_half columns fitem feature3 alpha">
-                                            <div class="item-container">
-                                                <div class="feature-title-container">
-                                                    <div class="img-container"><img  src="images/contents/icon3.png" class="alignleft" alt="" /></div>
-                                                    <h3 class="feature-title"><a href="#" title="Permanent Link to Simple &amp; Powerful Theme">Descalsificadoras</a></h3>
-                                                </div>
-                                                <div class="feature-text">Eliminación a través de intercambios iónicos la dureza del agua debida al exceso de calcio y magnesio, que son los causantes de provocar incrustaciones en las instalaciones. </div>
-                                                <div class="feature-link"><a href="#" class="more-link">Más info</a></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                        <div class="one_half columns fitem feature4 omega">
-                                            <div class="item-container">
-                                                <div class="feature-title-container">
-                                                    <div class="img-container"><img  src="images/contents/icon5.png" class="alignleft" alt="" /></div>
-                                                    <h3 class="feature-title"><a href="#" title="Permanent Link to Awesome Custom Slider">Osmosis</a></h3>
-                                                </div>
-                                                <div class="feature-text">La ósmosis del agua es un fenómeno biológico importante para el metabolismo celular de los seres vivos. </div>
-                                                <div class="feature-link"><a href="#" class="more-link">Más info</a></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                        <div class="one_half columns fitem feature3 alpha">
-                                            <div class="item-container">
-                                                <div class="feature-title-container">
-                                                    <div class="img-container"><img  src="images/contents/icon6.png" class="alignleft" alt="" /></div>
-                                                    <h3 class="feature-title"><a href="#" title="Permanent Link to Simple &amp; Powerful Theme">Desaladoras</a></h3>
-                                                </div>
-                                                <div class="feature-text">Proceso para la eliminación de la sal del agua de mar. </div>
-                                                <div class="feature-link"><a href="#" class="more-link">Más info</a></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                        <div class="one_half columns fitem feature4 omega">
-                                            <div class="item-container">
-                                                <div class="feature-title-container">
-                                                    <div class="img-container"><img  src="images/contents/icon4.png" class="alignleft" alt="" /></div>
-                                                    <h3 class="feature-title"><a href="#" title="Permanent Link to Awesome Custom Slider">Aguas</a></h3>
-                                                </div>
-                                                <div class="feature-text">Departamento especifico para el tratamiento de todo tipo de aguas. </div>
-                                                <div class="feature-link"><a href="#" class="more-link">Más info</a></div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
                                     </div>
-                                <div class="clear"></div>
-                                </div>
-       
-                            <div class="clear"></div><!-- clear float --> 
-                            </section>
-                        </section><!-- END #maincontent -->
-                        <div class="clear"></div><!-- clear float --> 
-                    </div>
-					
-                </div>
-            </div>
-            <div class="clear"></div><!-- clear float --> 
-        </div><!-- END #outermain -->
-        <!-- END MAIN CONTENT -->
-               
-        
-        <!-- FOOTER -->
-        <div id="outerfooter">
-        	<div id="footercontainer">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="twelve columns">
-                            <footer id="footer">
-								<div class="copyrighttext">
-									Copyright &copy; 2016 <a href="./index.html">Desarrollo Químico Europeo, S.L..</a> Desarrollado por <a href="#" title="Ligarto Labs">LigartoLabs.com</a>.
-                                </div>
-                            </footer>
+                                    <div class="clear"></div>
+                                </header>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                    
                     </div>
+                    <!-- END HEADER -->
+
+                    <section ng-view></section>
+
+                    <!-- FOOTER -->
+                    <div id="outerfooter">
+                        <div id="footercontainer">
+                            <div class="container">
+                                <div class="row">
+
+                                    <div class="twelve columns">
+                                        <footer id="footer">
+                                            <div class="copyrighttext">
+                                                Copyright &copy; 2016 <a href="./index.html">Desarrollo Químico Europeo, S.L..</a> Desarrollado por <a href="#" title="Ligarto Labs">LigartoLabs.com</a>.
+                                            </div>
+                                        </footer>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FOOTER -->
+
                 </div>
             </div>
         </div>
-        <!-- END FOOTER -->
-        
-        </div>
-        </div>
-        </div>
-        
-	</div><!-- end outercontainer -->
+
+    </div><!-- end outercontainer -->
 </div><!-- end bodychild -->
 
 
@@ -277,8 +149,8 @@
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 
 <!-- jQuery Superfish -->
-<script type="text/javascript" src="js/hoverIntent.js"></script> 
-<script type="text/javascript" src="js/superfish.js"></script> 
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
 <script type="text/javascript" src="js/supersubs.js"></script>
 
 <!-- jQuery Dropdown Mobile -->
@@ -290,20 +162,35 @@
 <!-- jQuery PrettyPhoto -->
 <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
 
-<!-- jQuery Camera Slider -->
-<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
-<script type="text/javascript">
-jQuery('#slidernivo').nivoSlider({
-	directionNav : true,
-	controlNav :  false,
-	effect: 'random',
-	slices: 15,
-	boxCols: 8,
-	boxRows: 4,
-	animSpeed: 500,
-	pauseTime: 6000,
-});
-</script>
+
+<!-- Loading AngularJS and other javascript libraries -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>-->
+
+<!-- Loading third party dependencies -->
+<script src="vendor/loading-bar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+
+<!-- Loading app.js -->
+<script src="scripts/app.js"></script>
+
+<!-- Loading services -->
+
+<!-- Loading constants -->
+
+<!-- Loading los providers -->
+
+<!-- Loading filters -->
+
+<!-- Loading controllers -->
+<script src="scripts/controllers/Inicio.js"></script>
+<script src="scripts/controllers/Nosotros.js"></script>
+<script src="scripts/controllers/Productos.js"></script>
+
+<!-- Loading directives -->
+
 
 </body>
 </html>
