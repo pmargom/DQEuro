@@ -31,6 +31,31 @@ angular.module("dqeuro").config(function($routeProvider) {
       templateUrl: "views/AboutUs.html"
    });
 
+   $routeProvider.when("/mantenimiento", {
+      controller: "MantenimientoCtrl",
+      templateUrl: "views/mantenimiento.html"
+   });
+
+   $routeProvider.when("/legionella", {
+      controller: "LegionellaCtrl",
+      templateUrl: "views/Legionella.html"
+   });
+
+   $routeProvider.when("/aguas", {
+      controller: "AguasCtrl",
+      templateUrl: "views/Aguas.html"
+   });
+
+   $routeProvider.when("/osmosis-y-desaladoras", {
+      controller: "OsmosisCtrl",
+      templateUrl: "views/Osmosis.html"
+   });
+
+   $routeProvider.when("/descalsificadores", {
+      controller: "DescalsificadoresCtrl",
+      templateUrl: "views/Descalsificadores.html"
+   });
+
    $routeProvider.when("/productos", {
       controller: "ProductosCtrl",
       templateUrl: "views/Products.html"
